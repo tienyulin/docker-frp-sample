@@ -34,5 +34,11 @@ Both frpc and frps put `ini` setting file under `/usr/bin/frp/` in container. Ed
 ## Expose port
 Remember to expose the port on the server which set in `frpc.ini` for application to use.
 
+## Connect through ssh by default setting
+frps listens on port `6000` for frpc port `22` by default, which means the request will be passed to port `22` on `client` when ssh connect to `server` on port `6000`. 
+```
+$ ssh <client user>@<server ip> -p 6000
+```
+
 ## Reference
 [1] [fatedier/frp](https://github.com/fatedier/frp)
