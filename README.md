@@ -19,13 +19,13 @@ $ docker build -t frps -f frps/Dockerfile .
 ### frpc
 Run this command on `Client` and set `server_addr` for frpc connecting to frps.
 ```
-$ docker run --network=host -e server_addr=<server ip> frpc
+$ docker run  -d --name=frpc --network=host -v /etc/docker-frp/frpc:/usr/bin/frp/ --restart=always frpc
 ```
 
 ### frps
 Run this command on `Server`.
 ```
-$ docker run --network=host frps
+$ docker run  -d --name=frps --network=host -v /etc/docker-frp/frps:/usr/bin/frp/ --restart=always frps
 ```
 
 ## Edit frp setting
