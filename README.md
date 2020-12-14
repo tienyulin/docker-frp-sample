@@ -28,4 +28,4 @@ $ docker run --network=host frps
 ```
 
 ## Edit frp
-Both frpc and frps put `ini` file under `/usr/bin/frp/`. Editing the setting in `ini` file, then restart the container.
+Both frpc and frps put `ini` file under `/usr/bin/frp/` in container. Editing the setting in `ini` file, then restart the container.
