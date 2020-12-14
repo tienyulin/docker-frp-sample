@@ -32,7 +32,7 @@ $ docker run --network=host frps
 Both frpc and frps put `ini` setting file under `/usr/bin/frp/` in container. Edit `ini` file, then restart the container.
 
 ## Expose port
-Remember to expose the port on the server which set in `frpc.ini` for application to use.
+Remember to expose the port on the server which set in `frpc.ini` for application to use. For example, expose port `6000` on `server` for default setting of `ssh`.
 
 ## Connect through ssh by default setting
 frps listens to port `6000` for frpc port `22` by default, which means the request will be passed to port `22` on `client` when connect to `server` on port `6000` through ssh. 
