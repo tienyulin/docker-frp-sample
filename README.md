@@ -32,4 +32,4 @@ $ docker run --network=host frps
 Both frpc and frps put `ini` setting file under `/usr/bin/frp/` in container. Edit `ini` file, then restart the container.
 
 ## Expose port
-Remember to expose the port on the server which set in `frpc.ini` for application use.
+Remember to expose the port on the server which set in `frpc.ini` for application to use.
