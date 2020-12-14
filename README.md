@@ -33,3 +33,6 @@ Both frpc and frps put `ini` setting file under `/usr/bin/frp/` in container. Ed
 
 ## Expose port
 Remember to expose the port on the server which set in `frpc.ini` for application to use.
+
+## Reference
+[1] [fatedier/frp](https://github.com/fatedier/frp)
