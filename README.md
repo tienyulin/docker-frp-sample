@@ -16,13 +16,13 @@ $ docker build -t frps -f frps/Dockerfile .
 
 ## Run Container
 ### frpc
-Run this command on `Client`. You can replace `/etc/docker-frp/frpc` to any path you want, it means you mount this path to `/usr/bin/frp/` in container.
+Run this command on `Client`. You can replace `/etc/docker-frp/frpc` to any path you want, it means you mount this local path to `/usr/bin/frp/` in container.
 ```
 $ docker run -d --name=frpc --network=host -v /etc/docker-frp/frpc:/usr/bin/frp/ --restart=always tienyu/frpc
 ```
 
 ### frps
-Run this command on `Server`. You can change `/etc/docker-frp/frps` to any path you want, it means you mount this path to `/usr/bin/frp/` in container.
+Run this command on `Server`. You can change `/etc/docker-frp/frps` to any path you want, it means you mount this local path to `/usr/bin/frp/` in container.
 ```
 $ docker run -d --name=frps --network=host -v /etc/docker-frp/frps:/usr/bin/frp/ --restart=always tienyu/frps
 ```
