@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-COPY /usr/bin/frp/ ./frpc/frpc
-COPY /usr/bin/frp/ ./frpc/frpc.ini
+COPY ./frpc/frpc /usr/bin/frp/
+COPY ./frpc/frpc.ini /usr/bin/frp/
 
 ENTRYPOINT /usr/bin/frp/frpc -c /usr/bin/frp/frpc.ini
