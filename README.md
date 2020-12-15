@@ -18,13 +18,13 @@ $ docker build -t frps -f frps/Dockerfile .
 ### frpc
 Run this command on `Client`. You can replace `/etc/docker-frp/frpc` to any path you want.
 ```
-$ docker run -d --name=frpc --network=host -v /etc/docker-frp/frpc:/usr/bin/frp/ --restart=always frpc
+$ docker run -d --name=frpc --network=host -v /etc/docker-frp/frpc:/usr/bin/frp/ --restart=always tienyu/frpc
 ```
 
 ### frps
 Run this command on `Server`. You can change `/etc/docker-frp/frps` to any path you want.
 ```
-$ docker run -d --name=frps --network=host -v /etc/docker-frp/frps:/usr/bin/frp/ --restart=always frps
+$ docker run -d --name=frps --network=host -v /etc/docker-frp/frps:/usr/bin/frp/ --restart=always tienyu/frps
 ```
 
 ## Edit frp setting
