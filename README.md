@@ -1,5 +1,5 @@
 # docker frp
-frp is a fast reverse proxy to help expose a local server behind a NAT or firewall to the Internet.
+frp is a fast reverse proxy to help expose a local server behind a NAT or firewall to the Internet. This demo packs frp setting into container for running easily.
 
 ## Build Image
 Change directory to `docker-frp`.
@@ -28,7 +28,7 @@ $ docker run -d --name=frps --network=host -v /etc/docker-frp/frps:/usr/bin/frp/
 ```
 
 ## Edit frp setting
-Both frpc and frps have `ini` setting file under `/etc/docker-frp/<frpc or frps>` folder, or under the path you replace. 
+Both frpc and frps have `ini` setting file under `/etc/docker-frp/<frpc or frps>` folder, or under the path you replace. More detail setting can refer to [frpc_full.ini](https://github.com/tienyulin/docker-frp-sample/blob/master/frpc/frpc_full.ini) and [frps_full.ini](https://github.com/tienyulin/docker-frp-sample/blob/master/frps/frps_full.ini).
 
 * Default frpc.ini : Replace your server ip to server_addr
 ```
