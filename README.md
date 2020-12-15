@@ -16,19 +16,19 @@ $ docker build -t frps -f frps/Dockerfile .
 
 ## Run Container
 ### frpc
-Run this command on `Client` .
+Run this command on `Client`. You can replace `/etc/docker-frp/frpc` to any path you want.
 ```
 $ docker run -d --name=frpc --network=host -v /etc/docker-frp/frpc:/usr/bin/frp/ --restart=always frpc
 ```
 
 ### frps
-Run this command on `Server`.
+Run this command on `Server`. You can change `/etc/docker-frp/frps` to any path you want.
 ```
 $ docker run -d --name=frps --network=host -v /etc/docker-frp/frps:/usr/bin/frp/ --restart=always frps
 ```
 
 ## Edit frp setting
-Both frpc and frps have `ini` setting file under `/etc/docker-frp/<frpc or frps>` folder. 
+Both frpc and frps have `ini` setting file under `/etc/docker-frp/<frpc or frps>` folder, or under the path you replace. 
 
 * Default frpc.ini : Replace your server ip to server_addr
 ```
