@@ -1,5 +1,11 @@
 # docker frp
 
+frpc <br>
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tienyu/frpc)
+
+frps <br>
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tienyu/frps)
+
 frp is a fast reverse proxy to help expose a local server behind a NAT or firewall to the Internet. This demo packs frp setting into container for running easily.
 
 ## Build Image
